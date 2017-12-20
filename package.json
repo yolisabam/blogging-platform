@@ -1,0 +1,42 @@
+{
+  "name": "blogging-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yolisabam/blogging-platform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yolisabam/blogging-platform/issues"
+  },
+  "homepage": "https://github.com/yolisabam/blogging-platform#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.3.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "file-upload": "0.0.0",
+    "method-override": "^2.3.10",
+    "mysql2": "^1.5.1",
+    "newsapi": "^2.1.0",
+    "node-cron": "^1.2.1",
+    "passport": "^0.4.0",
+    "passport-github2": "^0.1.11",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.4.0",
+    "passport-remember-me": "0.0.1",
+    "passport-twitter": "^1.0.4",
+    "sequelize": "^4.28.6"
+  }
+}
