@@ -32,3 +32,17 @@ const exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
+
+//required for passport
+
+app.use(session({
+    key: "user_sid",
+    secret: "rxqklappizbxbwoy",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        expires: 600000
+    }
+}));
+
+
