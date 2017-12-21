@@ -26,3 +26,9 @@ app.use(express.statuc("public"));
 app.use(function(error, request, response, next) {
   console.log(error);
 });
+
+//Setting up Handlebars
+const exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({defaultLayout: "main"}));
+app.set("view engine", "handlebars");
