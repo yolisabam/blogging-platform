@@ -55,4 +55,10 @@ app.use(method("_method"));
 const routes = require("./routes/api-routes");
 app.use("/", routes);
 
-//
+// launch //
+
+db.sequalize.sync({}).then(function(){
+  app.listen(PORT, function(){
+      console.log(`App listening on PORT ${PORT}`);
+  });
+});
