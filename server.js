@@ -18,3 +18,11 @@ require("./config/passport")(passport); //setting up passport for config
 
 //setting up express application
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.text());
+app.use(bodyParser.json(type: "application/vnd.api+json"}));
+
+app.use(express.statuc("public"));
+app.use(function(error, request, response, next) {
+  console.log(error);
+});
