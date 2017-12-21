@@ -45,4 +45,9 @@ app.use(session({
     }
 }));
 
+app.use(passport.initialize());
+app.use(passport.session()); //adding persistent login sessions
+app.use(flash());
+app.use(method("_method"));
 
+// routes //
