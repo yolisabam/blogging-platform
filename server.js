@@ -51,3 +51,8 @@ app.use(flash());
 app.use(method("_method"));
 
 // routes //
+ 
+const routes = require("./routes/api-routes");
+app.use("/", routes);
+
+//
